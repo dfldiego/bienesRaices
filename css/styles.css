@@ -1,0 +1,20 @@
+/*HEADER*/
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+}
+
+
+/*
+height: 100vh -> detecta el tamaño de nuestra pantalla
+min-height -> altura minima
+background-position: center center; -> posicionar la imagen en el centro.
+background-size: cover; -> toma todo el espacio disponible pero siempre guardando las proporsiones.
+
+Hojas de estilo en cascada: se ejecutan de arriba hacia abajo.
+clase: puede ser reutilizada
+id: multiples ids pero con nombres diferentes. uno por documento.
+*/
