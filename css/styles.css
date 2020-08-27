@@ -4,7 +4,6 @@
     margin: 0 auto;
 }
 
-
 /*HEADER*/
 .site-header.inicio {
     background-image: url(../img/header.jpg);
@@ -14,13 +13,54 @@
     min-height: 600px;
 }
 
+.barra {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+}
+
+/*NAVEGACION*/
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.navegacion a:hover {
+    color: #71b100;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
 
 /*
+
 height: 100vh -> detecta el tamaño de nuestra pantalla
 min-height -> altura minima
 background-position: center center; -> posicionar la imagen en el centro.
 background-size: cover; -> toma todo el espacio disponible pero siempre guardando las proporsiones.
 margin: 0 auto; --> centrar contenedores
+text-decoration: none; -->quita el subrayado
+
+FLEXBOX: afecta al primer nivel de hijos.
+justify-content: ---> sirve para alinear horizontalmente
+justify-content: flex-end; ->posiciona horizontalmente a los hijos del lado derecho
+justify-content: flex-start; ->posiciona horizontalmente a los hijos del lado izq
+justify-content: center;->posiciona horizontalmente a los hijos en el centro
+justify-content: space-around;  --> distribuye los hijos de forma proporsional horizontalmente
+justify-content: space-evenly; --> similar a space-around
+justify-content: space-between; -->alinea horizontalmente un hijo a la izq y otro a la derecha
+align-items ---> sirve para alinear verticalmente
+align-items: flex-end; ---->alinea verticalmente hacia abajo.
+align-items: flex-start; -->alinea verticalmente hacia arriba
+align-items: center; ---> alinea verticalmente en el centro
+
+PSEUDOSELECTORES
+.navegacion a:last-of-type --> pseudoselector, aplicar al ultimo elemento
+.navegacion a:hover --> se produce un estilo al posicionar el mouse sobre el elemento
 
 Hojas de estilo en cascada: se ejecutan de arriba hacia abajo.
 clase: puede ser reutilizada
