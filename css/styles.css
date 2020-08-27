@@ -1,3 +1,10 @@
+/**GLOBALES**/
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 /*HEADER*/
 .site-header.inicio {
     background-image: url(../img/header.jpg);
@@ -13,6 +20,7 @@ height: 100vh -> detecta el tamaño de nuestra pantalla
 min-height -> altura minima
 background-position: center center; -> posicionar la imagen en el centro.
 background-size: cover; -> toma todo el espacio disponible pero siempre guardando las proporsiones.
+margin: 0 auto; --> centrar contenedores
 
 Hojas de estilo en cascada: se ejecutan de arriba hacia abajo.
 clase: puede ser reutilizada
