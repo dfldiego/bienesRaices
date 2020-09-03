@@ -338,7 +338,7 @@ background-position: center center; -> posicionar la imagen en el centro.
 background-size: cover; -> toma todo el espacio disponible pero siempre guardando las proporsiones.
 margin: 0 auto; --> centrar contenedores
 text-decoration: none; -->quita el subrayado
- line-height --> interlineado
+line-height --> interlineado
 
 FLEXBOX: afecta al primer nivel de hijos.
 justify-content: ---> sirve para alinear horizontalmente
