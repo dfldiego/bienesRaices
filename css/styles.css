@@ -240,13 +240,38 @@ h4 {
     flex-basis: calc(60% - 3rem);
 }
 
+.entrada-blog a {
+    color: #000000;
+    text-decoration: none;
+}
+
 .texto-entrada h4 {
     margin: 0;
     line-height: 1.4;
 }
 
-/*
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+    margin-top: 1rem;
+}
 
+.texto-entrada span {
+    color: #e08709;
+}
+
+/*
+PSEUDO-ELEMENTO: 
+    - no se pueden seleccionar. 
+    - no tienen un display definido.
+    -en este ejemplo -> lo usamos para una linea horizontal verde.
+*/
+
+
+/*
 height: 100vh -> detecta el tamaño de nuestra pantalla
 min-height -> altura minima
 background-position: center center; -> posicionar la imagen en el centro.
