@@ -173,6 +173,25 @@ h4 {
     justify-content: flex-end;
 }
 
+/**CONTACTO HOME**/
+.imagen-contacto {
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 1;
+    color: #ffffff;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
 /*
 
 height: 100vh -> detecta el tamaño de nuestra pantalla
@@ -201,6 +220,9 @@ flex-direction: column --> flex toma la altura, alinea los elementos de arriba h
 flex-basis:200px --> analogo a width. Es para la base. cada bloque hijo del flex toma 200px 
 display: inline-block; ---> le puedo dar anchos y altos y no va a tomar todo el espacio disponible
 img y a --> son display inline ---> display inline-block para poder darles anchos y altos o margin
+flex: 1; --> factor de crecimiento.
+            detecta cuanto tamaño hay disponible y ctos elementos hay.
+            si hay 1000px disponible y 1 elemento, divide 1000/1 y asigna 1000px a ese elemento.
 
 PSEUDOSELECTORES
 .navegacion a:last-of-type --> pseudoselector, aplicar al ultimo elemento
