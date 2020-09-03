@@ -222,6 +222,7 @@ h4 {
     flex-basis: calc(40% - 2rem);
 }
 
+/***BLOG***/
 .entrada-blog {
     display: flex;
     justify-content: space-between;
@@ -263,13 +264,54 @@ h4 {
     color: #e08709;
 }
 
+/**TESTIMONIALES**/
+.testimonial {
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+}
+
+.testimonial p {
+    text-align: right;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
 /*
 PSEUDO-ELEMENTO: 
+    ::after -> despues
+    ::before -> antes
     - no se pueden seleccionar. 
     - no tienen un display definido.
     -en este ejemplo -> lo usamos para una linea horizontal verde.
 */
 
+/*
+El blockquote es el padre de la comilla, el ::before no se crea 
+antes del blockquote sino al inicio del blockquote, por lo tanto 
+el ::before es un hijo del blockquote.
+*/
+
+/*
+POSITION:
+    -relative -> el elemento padre debe ser relative -> (blockquote)
+    -absolute -> el elemento hijo.(::before) -> accedemos a: left. top. bottom. right.
+*/
 
 /*
 height: 100vh -> detecta el tamaño de nuestra pantalla
