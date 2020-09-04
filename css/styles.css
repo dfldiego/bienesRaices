@@ -344,6 +344,11 @@ h4 {
     align-items: center;
 }
 
+/**CONTACTO**/
+
+label {
+    display: block;
+}
 
 /*
 PSEUDO-ELEMENTO: 
