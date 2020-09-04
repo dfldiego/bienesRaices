@@ -151,12 +151,14 @@ h4 {
 .contenedor-anuncios {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .anuncio {
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background-color: #f5f5f5;
+    margin-bottom: 2rem;
 }
 
 .contenido-anuncio {
@@ -379,6 +381,19 @@ img y a --> son display inline ---> display inline-block para poder darles ancho
 flex: 1; --> factor de crecimiento.
             detecta cuanto tamaño hay disponible y ctos elementos hay.
             si hay 1000px disponible y 1 elemento, divide 1000/1 y asigna 1000px a ese elemento.
+flex-wrap: wrap; -->contenido tome tamaño de la base
+                    ( usado en elementos padres.)
+
+flex-shrink: 1; -->contenido se achica si es posible.
+                    (usado en elementos hijos.)
+flex-shrink: 0; -->se queda con el tamaño de la base.
+flex-grow: 1;   -->el contenido crece si es posible. si el contenido tiene una 
+                base de 300px pero si ponemos 1, si el contenido
+                puede,va a crecer. (usado en elementos hijos.)
+flex-grow: 0;   --> se queda con el tamaño de la base.
+flex: grow shrink basis. -->flex: 0 0 calc(33.3% - 1rem);
+                            (usado en elementos hijos.)
+
 
 PSEUDOSELECTORES
 .navegacion a:last-of-type --> pseudoselector, aplicar al ultimo elemento
